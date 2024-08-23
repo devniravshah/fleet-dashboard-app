@@ -11,7 +11,6 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
   table: tableReducer,
-  // Add other reducers here
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

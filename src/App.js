@@ -1,8 +1,7 @@
-import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import TableView from "./components/TableView/TableView";
-import PivotView from "./components/PivotView/PivotView"; // Placeholder for now
+import PivotView from "./components/PivotView/PivotView";
 
 function App() {
   return (

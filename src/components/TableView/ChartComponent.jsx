@@ -1,4 +1,4 @@
-import React from "react";
+import { useMemo } from "react";
 import { Bar } from "react-chartjs-2";
 import { Box } from "@mui/material";
 import {
@@ -21,8 +21,7 @@ ChartJS.register(
 );
 
 const ChartComponent = ({ data }) => {
-  // Aggregate data for the chart (for example, count entities by type)
-  const chartData = React.useMemo(() => {
+  const chartData = useMemo(() => {
     const entityTypes = data.reduce((acc, item) => {
       acc[item.entity_type] = (acc[item.entity_type] || 0) + 1;
       return acc;

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { format } from "date-fns";
 import {
   Button,
   Menu,
@@ -6,10 +7,8 @@ import {
   Checkbox,
   ListItemText,
   TextField,
-  FormControl,
   Box,
 } from "@mui/material";
-import { format } from "date-fns";
 
 const FiltersComponent = ({ onApply, activeFilters, onReset }) => {
   const [anchorEl, setAnchorEl] = useState(null);

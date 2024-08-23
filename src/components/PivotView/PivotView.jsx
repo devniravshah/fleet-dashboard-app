@@ -1,9 +1,9 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import PivotTableUI from "react-pivottable/PivotTableUI";
 import "react-pivottable/pivottable.css";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
-import { useSelector } from "react-redux";
 
 const PivotView = () => {
   const data = useSelector((state) => state.table.data);

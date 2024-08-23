@@ -9,5 +9,5 @@ export const fetchData = async () => {
     header: true,
     skipEmptyLines: true,
   }).data;
-  return parsedData.splice(0, 100);
+  return parsedData;
 };

@@ -1,20 +1,15 @@
-import React, { useEffect, useState } from "react";
-import {
-  Paper,
-  TableContainer,
-  CircularProgress,
-  Box,
-  Button,
-} from "@mui/material";
+import { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useLocation, useNavigate } from "react-router-dom";
+import { format } from "date-fns";
+import { Paper, TableContainer, CircularProgress, Box } from "@mui/material";
+
 import { fetchData } from "../../services/dataService";
 import { setData, setFilters } from "../../redux/slices/tableSlice";
 import TableComponent from "./TableComponent";
 import FiltersComponent from "./FiltersComponent";
-import ChartComponent from "./ChartComponent"; // Importing the ChartComponent
-import { useLocation, useNavigate } from "react-router-dom";
+import ChartComponent from "./ChartComponent";
 import "./TableView.css";
-import { format } from "date-fns";
 
 const TableView = () => {
   const dispatch = useDispatch();
@@ -55,7 +50,7 @@ const TableView = () => {
   }, [location.search, dispatch]);
 
   // Apply filters to data
-  const filteredData = React.useMemo(() => {
+  const filteredData = useMemo(() => {
     if (!data || Object.keys(filters).length === 0) return data;
 
     return data.filter((row) => {

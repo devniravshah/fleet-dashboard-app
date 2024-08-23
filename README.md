@@ -1,31 +1,55 @@
-# Create React App
+# Fleet Dashboard App
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+This is a simple web application to display a fleet dashboard for a trucking company.
 
-## Deploy Your Own
+## Features
 
-Deploy your own Create React App project with Vercel.
+- Display a table of all the records in the sheet.
+- Allow the user to filter the records in the table based on the entity type.
+- Allow the user to sort the records in the table based on the entity type.
+- Display a chart of the distribution of entity types in the table.
+- Allow the user to save the current view of the table and chart as a named view.
+- Allow the user to load a saved view of the table and chart.
+- Allow the user to reset the table and chart to the default view.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+## How to Run
 
-_Live Example: https://create-react-template.vercel.app/_
+1.  Clone the repository to your local machine.
+2.  Open a terminal and navigate to the root of the repository.
+3.  Run `npm install` to install all the dependencies.
+4.  Run `npm start` to start the application.
+5.  Open a web browser and navigate to `http://localhost:3000`.
 
-## Available Scripts
+## How to Test
 
-In the project directory, you can run:
+1.  Clone the repository to your local machine.
+2.  Open a terminal and navigate to the root of the repository.
+3.  Run `npm install` to install all the dependencies.
+4.  Run `npm test` to run all the tests.
 
-### `npm start`
+## How to Build
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1.  Clone the repository to your local machine.
+2.  Open a terminal and navigate to the root of the repository.
+3.  Run `npm install` to install all the dependencies.
+4.  Run `npm run build` to build the application.
+5.  The application will be built in the `build` folder.
 
-The page will reload when you make changes. You may also see any lint errors in the console.
+## How to Deploy
 
-### `npm test`
+1.  Clone the repository to your local machine.
+2.  Open a terminal and navigate to the root of the repository.
+3.  Run `npm install` to install all the dependencies.
+4.  Run `npm run build` to build the application.
+5.  Run `npm run deploy` to deploy the application to Vercel.
 
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Use
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+1.  Open a web browser and navigate to `https://fleet-dashboard-app.vercel.app/`.
+2.  The application will display a table of all the records in the sheet.
+3.  The user can filter the records in the table based on the entity type.
+4.  The user can sort the records in the table based on the entity type.
+5.  The application will display a chart of the distribution of entity types in the table.
+6.  The user can save the current view of the table and chart as a named view.
+7.  The user can load a saved view of the table and chart.
+8.  The user can reset the table and chart to the default view.

@@ -1,5 +1,12 @@
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from "@mui/material";
 import { useState } from "react";
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  TextField,
+} from "@mui/material";
 
 const SaveViewModal = ({ open, onClose, onConfirm }) => {
   const [name, setName] = useState("");
@@ -39,4 +46,3 @@ const SaveViewModal = ({ open, onClose, onConfirm }) => {
 };
 
 export default SaveViewModal;
-
