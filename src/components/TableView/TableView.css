@@ -1,0 +1,77 @@
+.table-container {
+  padding: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: #1976d2;
+  color: white;
+  user-select: none;
+}
+
+.table thead th {
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Resizer styles */
+.resizer {
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(50%);
+  z-index: 1;
+  touch-action: none;
+}
+
+.resizer:hover {
+  background: #ffffff;
+  cursor: col-resize;
+}
+
+.custom-textfield {
+  margin-left: 10px;
+  width: 80px;
+  height: 25px;
+}
+
+.custom-textfield .MuiOutlinedInput-root {
+  height: 25px;
+}
+
+.filter-input input {
+  padding: 7px 14px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.filters .apply-filter-button {
+  margin: 0 10px;
+}

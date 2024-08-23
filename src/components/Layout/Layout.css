@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.layout-root {
+  flex-grow: 1;
+}
+
+.app-bar {
+  background-color: #3f51b5;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-actions,
+.right-actions {
+  display: flex;
+  align-items: center;
+}
+
+.left-actions {
+  flex-grow: 1;
+}
+
+.right-actions button {
+  margin-left: 10px;
+}
+
+.title {
+  flex-grow: 2;
+}
+
+.content {
+  padding: 20px 0;
+}
