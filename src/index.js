@@ -15,6 +15,36 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#1976d2",
+      contrastText: "#fff",
+    },
+    secondary: {
+      main: "#ff9800",
+      contrastText: "#fff",
+    },
+    background: {
+      default: "#fff",
+      paper: "#fff",
+    },
+    text: {
+      primary: "rgba(0,0,0,0.87)",
+      secondary: "rgba(0,0,0,0.54)",
+    },
+  },
+  typography: {
+    fontFamily: ["Roboto", "sans-serif"].join(","),
+    fontSize: 14,
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+    fontWeightBold: 700,
+  },
+  shape: {
+    borderRadius: 2,
+  },
+  spacing: 2,
+  mixins: {
+    toolbar: {
+      minHeight: 48,
     },
   },
 });

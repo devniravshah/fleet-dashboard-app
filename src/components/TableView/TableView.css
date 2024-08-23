@@ -1,7 +1,3 @@
-.table-container {
-  padding: 10px;
-}
-
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -9,7 +5,7 @@
 
 .table thead {
   background-color: #1976d2;
-  color: white;
+  color: #fff;
   user-select: none;
 }
 
@@ -21,11 +17,11 @@
 }
 
 .table tbody tr:nth-of-type(odd) {
-  background-color: #f9f9f9;
+  background-color: #f5f5f5;
 }
 
 .table tbody tr:hover {
-  background-color: #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 .table tbody td {
@@ -37,7 +33,7 @@
 /* Resizer styles */
 .resizer {
   display: inline-block;
-  width: 2px;
+  width: 1px;
   height: 100%;
   position: absolute;
   right: 0;
@@ -45,11 +41,12 @@
   transform: translateX(50%);
   z-index: 1;
   touch-action: none;
+  background: rgba(0, 0, 0, 0.12);
+  cursor: col-resize;
 }
 
 .resizer:hover {
-  background: #ffffff;
-  cursor: col-resize;
+  background: rgba(0, 0, 0, 0.24);
 }
 
 .custom-textfield {

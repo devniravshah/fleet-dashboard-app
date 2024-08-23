@@ -5,14 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
 }
 
 .layout-root {
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .app-bar {
-  background-color: #3f51b5;
+  background-color: #1976d2;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.05);
 }
 
 .toolbar {
@@ -37,8 +42,13 @@ body {
 
 .title {
   flex-grow: 2;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
 }
 
 .content {
+  flex-grow: 1;
   padding: 20px 0;
+  overflow: auto;
 }
